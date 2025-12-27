@@ -1,0 +1,40 @@
+# Redis for FreeBSD
+# Simple key-value store for Immich and other applications
+
+ARG BASE_VERSION=15
+FROM ghcr.io/daemonless/base:${BASE_VERSION}
+
+ARG FREEBSD_ARCH=amd64
+ARG PACKAGES="redis"
+
+LABEL org.opencontainers.image.title="Redis" \
+    org.opencontainers.image.description="Redis key-value store for FreeBSD" \
+    org.opencontainers.image.source="https://github.com/daemonless/redis" \
+    org.opencontainers.image.url="https://redis.io/" \
+    org.opencontainers.image.licenses="BSD-2-Clause" \
+    org.opencontainers.image.vendor="daemonless" \
+    org.opencontainers.image.authors="daemonless" \
+    io.daemonless.port="6379" \
+    io.daemonless.arch="${FREEBSD_ARCH}" \
+    io.daemonless.config-mount="/config" \
+    io.daemonless.category="Database" \
+    io.daemonless.packages="${PACKAGES}"
+
+# Install Redis
+RUN pkg update && \
+    pkg install -y ${PACKAGES} && \
+    pkg clean -ay && \
+    rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
+
+# Create directories
+RUN mkdir -p /config/data /run/redis && \
+    chown -R bsd:bsd /config /run/redis
+
+# Copy service files
+COPY root/ /
+RUN chmod +x /etc/services.d/*/run /etc/cont-init.d/* 2>/dev/null || true
+
+ENV REDIS_DATA=/config/data
+
+EXPOSE 6379
+VOLUME /config

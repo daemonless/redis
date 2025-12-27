@@ -1,0 +1,28 @@
+#!/bin/sh
+# Initialize Redis configuration
+
+REDIS_DATA="${REDIS_DATA:-/config/data}"
+
+# Fix permissions
+chown -R bsd:bsd /config /run/redis
+
+# Create config if not exists
+if [ ! -f /config/redis.conf ]; then
+    cat > /config/redis.conf << 'EOF'
+# Redis configuration for container use
+bind 0.0.0.0
+port 6379
+dir /config/data
+dbfilename dump.rdb
+appendonly yes
+appendfilename "appendonly.aof"
+protected-mode no
+EOF
+    chown bsd:bsd /config/redis.conf
+    echo "Redis configuration created."
+else
+    echo "Redis configuration exists, skipping."
+fi
+
+mkdir -p "$REDIS_DATA"
+chown bsd:bsd "$REDIS_DATA"

@@ -1,28 +1,73 @@
-# Redis for FreeBSD
+# redis
 
 Redis key-value store for [Immich](https://immich.app/) and other applications.
 
-## Usage
+## Environment Variables
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `PUID` | User ID for the application process | `1000` |
+| `PGID` | Group ID for the application process | `1000` |
+| `TZ` | Timezone for the container | `UTC` |
+| `S6_LOG_ENABLE` | Enable/Disable file logging | `1` |
+| `S6_LOG_MAX_SIZE` | Max size per log file (bytes) | `1048576` |
+| `S6_LOG_MAX_FILES` | Number of rotated log files to keep | `10` |
+| `REDIS_DATA` | Data directory path | `/config/data` |
+
+## Logging
+
+This image uses `s6-log` for internal log rotation.
+- **System Logs**: Captured from console and stored at `/config/logs/daemonless/redis/`.
+- **Application Logs**: Managed by the app and typically found in `/config/logs/`.
+- **Podman Logs**: Output is mirrored to the console, so `podman logs` still works.
+
+## Quick Start
 
 ```bash
 podman run -d --name redis \
-  -v /containers/redis:/config \
+  -p 6379:6379 \
+  -e PUID=1000 -e PGID=1000 \
+  -v /path/to/config:/config \
   ghcr.io/daemonless/redis:latest
 ```
 
-## Environment Variables
+## podman-compose
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| REDIS_DATA | /config/data | Data directory |
+```yaml
+services:
+  redis:
+    image: ghcr.io/daemonless/redis:latest
+    container_name: redis
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - /data/config/redis:/config
+    ports:
+      - 6379:6379
+    restart: unless-stopped
+```
+
+## Tags
+
+| Tag | Source | Description |
+|-----|--------|-------------|
+| `:latest` | `databases/redis` | FreeBSD latest packages (Alias for :pkg-latest) |
+| `:pkg` | `databases/redis` | FreeBSD quarterly packages |
+| `:pkg-latest` | `databases/redis` | FreeBSD latest packages |
 
 ## Volumes
 
-- `/config` - Configuration and data directory
+| Path | Description |
+|------|-------------|
+| `/config` | Configuration and data directory |
 
 ## Ports
 
-- `6379` - Redis
+| Port | Description |
+|------|-------------|
+| 6379 | Redis |
 
 ## Configuration
 
@@ -32,3 +77,13 @@ Default settings:
 - Bind: 0.0.0.0
 - Append-only mode enabled
 - Protected mode disabled (for container use)
+
+## Notes
+
+- **User:** `bsd` (UID/GID set via PUID/PGID, default 1000)
+- **Base:** Built on `ghcr.io/daemonless/base-image` (FreeBSD)
+
+## Links
+
+- [Website](https://redis.io/)
+- [FreshPorts](https://www.freshports.org/databases/redis/)

@@ -18,11 +18,13 @@ LABEL org.opencontainers.image.title="Redis" \
     io.daemonless.arch="${FREEBSD_ARCH}" \
     io.daemonless.config-mount="/config" \
     io.daemonless.category="Database" \
+    io.daemonless.pkg-source="containerfile" \
     io.daemonless.packages="${PACKAGES}"
 
 # Install Redis
 RUN pkg update && \
     pkg install -y ${PACKAGES} && \
+    mkdir -p /app && pkg info redis | sed -n 's/.*Version.*: *//p' > /app/version && \
     pkg clean -ay && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 

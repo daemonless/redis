@@ -17,7 +17,7 @@ LABEL org.opencontainers.image.title="Redis" \
     io.daemonless.port="6379" \
     io.daemonless.arch="${FREEBSD_ARCH}" \
     io.daemonless.config-mount="/config" \
-    io.daemonless.category="Database" \
+    io.daemonless.category="Databases" \
     io.daemonless.pkg-source="containerfile" \
     io.daemonless.packages="${PACKAGES}"
 

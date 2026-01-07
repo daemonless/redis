@@ -1,0 +1,4 @@
+icon: ':simple-redis:'
+cit:
+  mode: port
+  port: 6379

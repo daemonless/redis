@@ -1,0 +1,40 @@
+name: redis
+
+x-daemonless:
+  title: "Redis"
+  icon: ":simple-redis:"
+  category: "Databases"
+  description: "Redis key-value store on FreeBSD."
+  upstream_url: "https://github.com/redis/redis"
+  web_url: "https://redis.io/"
+  freshports_url: "https://www.freshports.org/databases/redis/"
+  user: "bsd"
+  mlock: false
+  upstream_binary: false
+  
+  docs:
+    env:
+      PUID: "User ID for the application process"
+      PGID: "Group ID for the application process"
+      TZ: "Timezone for the container"
+    volumes:
+      /config: "Data and configuration directory"
+    ports:
+      6379: "Redis port"
+
+services:
+  redis:
+    image: ghcr.io/daemonless/redis:latest
+    container_name: redis
+    restart: unless-stopped
+    
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+
+    volumes:
+      - /path/to/containers/redis:/config
+
+    ports:
+      - "6379:6379"

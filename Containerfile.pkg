@@ -22,7 +22,7 @@ LABEL org.opencontainers.image.title="Redis" \
       io.daemonless.port="6379" \
       io.daemonless.volumes="/config" \
       io.daemonless.arch="${FREEBSD_ARCH}" \
-      io.daemonless.pkg-source="containerfile" \
+      io.daemonless.pkg-source="pkg" \
       io.daemonless.packages="${PACKAGES}"
 
 # Install Redis

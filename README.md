@@ -11,6 +11,7 @@ Redis key-value store on FreeBSD.
 |---|---|
 | **Port** | 6379 |
 | **Registry** | `ghcr.io/daemonless/redis` |
+| **Docs** | [daemonless.io/images/redis](https://daemonless.io/images/redis/) |
 | **Source** | [https://github.com/redis/redis](https://github.com/redis/redis) |
 | **Website** | [https://redis.io/](https://redis.io/) |
 

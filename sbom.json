@@ -1,12 +1,12 @@
 {
   "image": "redis",
-  "generated": "2026-03-14T19:19:51Z",
+  "generated": "2026-03-22T09:36:36Z",
   "tags": {
     "pkg-latest": {
       "arch": "amd64",
-      "app_version": "8.6.1",
+      "app_version": "8.6.1_1",
       "source": "pkg",
-      "generated": "2026-03-14T19:19:38Z",
+      "generated": "2026-03-22T09:36:25Z",
       "packages": {
         "freebsd": [
           {
@@ -126,6 +126,10 @@
             "version": "15.0"
           },
           {
+            "name": "ca_root_nss",
+            "version": "3.117_2"
+          },
+          {
             "name": "execline",
             "version": "2.9.8.1"
           },
@@ -139,11 +143,11 @@
           },
           {
             "name": "pkg",
-            "version": "2.6.2"
+            "version": "2.6.2_1"
           },
           {
             "name": "redis",
-            "version": "8.6.1"
+            "version": "8.6.1_1"
           },
           {
             "name": "s6",
@@ -168,7 +172,7 @@
         "rust": []
       },
       "summary": {
-        "freebsd": 37,
+        "freebsd": 38,
         "dotnet": 0,
         "go": 0,
         "java": 0,
@@ -177,14 +181,14 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 37
+        "total": 38
       }
     },
     "pkg": {
       "arch": "amd64",
       "app_version": "8.4.0_1",
       "source": "pkg",
-      "generated": "2026-03-14T19:18:58Z",
+      "generated": "2026-03-22T09:36:22Z",
       "packages": {
         "freebsd": [
           {
@@ -302,6 +306,10 @@
           {
             "name": "FreeBSD-zoneinfo",
             "version": "15.0"
+          },
+          {
+            "name": "ca_root_nss",
+            "version": "3.117_2"
           },
           {
             "name": "execline",
@@ -346,7 +354,7 @@
         "rust": []
       },
       "summary": {
-        "freebsd": 37,
+        "freebsd": 38,
         "dotnet": 0,
         "go": 0,
         "java": 0,
@@ -355,7 +363,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 37
+        "total": 38
       }
     }
   }

@@ -1,12 +1,12 @@
 {
   "image": "redis",
-  "generated": "2026-03-29T16:58:38Z",
+  "generated": "2026-03-29T20:56:47Z",
   "tags": {
     "pkg-latest": {
       "arch": "amd64",
       "app_version": "8.6.1_1",
       "source": "pkg",
-      "generated": "2026-03-29T16:58:23Z",
+      "generated": "2026-03-29T20:56:37Z",
       "packages": {
         "freebsd": [
           {
@@ -188,7 +188,7 @@
       "arch": "amd64",
       "app_version": "8.4.0_1",
       "source": "pkg",
-      "generated": "2026-03-29T16:57:39Z",
+      "generated": "2026-03-29T20:56:22Z",
       "packages": {
         "freebsd": [
           {

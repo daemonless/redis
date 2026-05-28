@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-17T07:16:54Z",
+  "generated": "2026-05-28T22:43:04Z",
   "image": "redis",
   "tags": {
     "pkg": {
       "app_version": "8.6.2",
       "arch": "amd64",
-      "generated": "2026-05-17T07:15:36Z",
+      "generated": "2026-05-28T22:40:40Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -51,7 +51,7 @@
           },
           {
             "name": "FreeBSD-libcasper",
-            "version": "15.0"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-libexecinfo",
@@ -95,7 +95,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p8"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -107,7 +107,7 @@
           },
           {
             "name": "FreeBSD-utilities",
-            "version": "15.0p1"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-xz-lib",
@@ -127,7 +127,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.123.1"
+            "version": "3.124"
           },
           {
             "name": "execline",
@@ -183,7 +183,7 @@
     "pkg-latest": {
       "app_version": "8.6.3",
       "arch": "amd64",
-      "generated": "2026-05-17T07:15:41Z",
+      "generated": "2026-05-28T22:39:59Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -229,7 +229,7 @@
           },
           {
             "name": "FreeBSD-libcasper",
-            "version": "15.0"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-libexecinfo",
@@ -273,7 +273,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.0p8"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -285,7 +285,7 @@
           },
           {
             "name": "FreeBSD-utilities",
-            "version": "15.0p1"
+            "version": "15.0p9"
           },
           {
             "name": "FreeBSD-xz-lib",
@@ -305,7 +305,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.123.1"
+            "version": "3.124"
           },
           {
             "name": "execline",

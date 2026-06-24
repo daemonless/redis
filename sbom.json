@@ -1,11 +1,11 @@
 {
-  "generated": "2026-06-13T20:55:43Z",
+  "generated": "2026-06-24T13:23:15Z",
   "image": "redis",
   "tags": {
     "pkg": {
       "app_version": "8.6.2",
       "arch": "amd64",
-      "generated": "2026-06-13T20:53:24Z",
+      "generated": "2026-06-24T13:22:06Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -183,7 +183,7 @@
     "pkg-latest": {
       "app_version": "8.8.0",
       "arch": "amd64",
-      "generated": "2026-06-13T20:54:24Z",
+      "generated": "2026-06-24T13:21:26Z",
       "packages": {
         "dotnet": [],
         "freebsd": [

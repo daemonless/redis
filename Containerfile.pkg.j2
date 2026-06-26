@@ -1,4 +1,4 @@
-ARG BASE_VERSION=15
+ARG BASE_VERSION=15.1-latest
 FROM ghcr.io/daemonless/base:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
@@ -29,7 +29,7 @@ LABEL org.opencontainers.image.title="{{ title }}" \
 # Install Redis
 RUN pkg update && \
     pkg install -y ${PACKAGES} && \
-    mkdir -p /app && pkg info redis | sed -n 's/.*Version.*: *//p' > /app/version && \
+    mkdir -p /app && pkg info ${PACKAGES} | sed -n 's/.*Version.*: *//p' > /app/version && \
     pkg clean -ay && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 

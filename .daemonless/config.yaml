@@ -1,15 +1,63 @@
-icon: ':simple-redis:'
 cit:
   mode: port
   port: 6379
 
 build:
   variants:
-    - tag: pkg
-      containerfile: Containerfile.pkg
-      aliases: ["latest"]
-      default: true
-    - tag: pkg-latest
+    - tag: "pkg-latest"
+      pkg_name: redis
       containerfile: Containerfile.pkg
       args:
-        BASE_VERSION: "15-latest"
+        PACKAGES: "redis"
+        BASE_VERSION: "15.1-latest"
+      aliases: ["latest", "pkg", "8.8"]
+      default: true
+    - tag: "6.2-pkg-latest"
+      pkg_name: redis62
+      containerfile: Containerfile.pkg
+      args:
+        PACKAGES: "redis62"
+        BASE_VERSION: "15.1-latest"
+      aliases: ["6.2"]
+    - tag: "7.2-pkg-latest"
+      pkg_name: redis72
+      containerfile: Containerfile.pkg
+      args:
+        PACKAGES: "redis72"
+        BASE_VERSION: "15.1-latest"
+      aliases: ["7.2"]
+    - tag: "7.4-pkg-latest"
+      pkg_name: redis74
+      containerfile: Containerfile.pkg
+      args:
+        PACKAGES: "redis74"
+        BASE_VERSION: "15.1-latest"
+      aliases: ["7.4"]
+    - tag: "8.0-pkg-latest"
+      pkg_name: redis80
+      containerfile: Containerfile.pkg
+      args:
+        PACKAGES: "redis80"
+        BASE_VERSION: "15.1-latest"
+      aliases: ["8.0"]
+    - tag: "8.2-pkg-latest"
+      pkg_name: redis82
+      containerfile: Containerfile.pkg
+      args:
+        PACKAGES: "redis82"
+        BASE_VERSION: "15.1-latest"
+      aliases: ["8.2"]
+    - tag: "8.4-pkg-latest"
+      pkg_name: redis84
+      containerfile: Containerfile.pkg
+      args:
+        PACKAGES: "redis84"
+        BASE_VERSION: "15.1-latest"
+      aliases: ["8.4"]
+    - tag: "8.6-pkg-latest"
+      pkg_name: redis86
+      containerfile: Containerfile.pkg
+      args:
+        PACKAGES: "redis86"
+        BASE_VERSION: "15.1-latest"
+      aliases: ["8.6"]

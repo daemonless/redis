@@ -10,7 +10,6 @@ Source: dbuild templates
 
 Redis key-value store on FreeBSD.
 
-
 | | |
 |---|---|
 | **Port** | 6379 |
@@ -19,14 +18,18 @@ Redis key-value store on FreeBSD.
 | **Website** | [https://redis.io/](https://redis.io/) |
 
 ## Version Tags
-
 | Tag | Description | Best For |
 | :--- | :--- | :--- |
-| `latest` / `pkg` | **FreeBSD Quarterly**. Uses stable, tested packages. | Most users. Matches Linux Docker behavior. |
-| `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `8.8` / `latest` / `pkg` / `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `6.2` / `6.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `7.2` / `7.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `7.4` / `7.4-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `8.0` / `8.0-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `8.2` / `8.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `8.4` / `8.4-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `8.6` / `8.6-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
 
 ## Prerequisites
-
 Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
 
 ## Deployment
@@ -36,24 +39,25 @@ Before deploying, ensure your host environment is ready. See the [Quick Start Gu
 ```yaml
 services:
   redis:
-    image: ghcr.io/daemonless/redis:latest
+    image: "ghcr.io/daemonless/redis:latest"
     container_name: redis
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=UTC
+      - PUID=1000  # User ID for the application process
+      - PGID=1000  # Group ID for the application process
+      - TZ=UTC  # Timezone for the container
     volumes:
       - "/path/to/containers/redis:/config"
     ports:
-      - 6379:6379
+      - "6379:6379"
     restart: unless-stopped
 ```
 
 ### AppJail Director
-
 **.env**:
 
 ```
+# .env
+
 DIRECTOR_PROJECT=redis
 PUID=1000
 PGID=1000
@@ -63,6 +67,8 @@ TZ=UTC
 **appjail-director.yml**:
 
 ```yaml
+# appjail-director.yml
+
 options:
   - alias:
   - ip4_inherit:
@@ -71,6 +77,7 @@ services:
     name: redis
     options:
       - container: 'boot args:--pull'
+      - expose: '6379:6379 proto:tcp' \
     oci:
       user: root
       environment:
@@ -87,11 +94,14 @@ volumes:
 **Makejail**:
 
 ```
+# Makejail
+
 ARG tag=latest
 
 OPTION overwrite=force
 OPTION from=ghcr.io/daemonless/redis:${tag}
 ```
+**Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
 
 ### Podman CLI
 
@@ -105,13 +115,30 @@ podman run -d --name redis \
   ghcr.io/daemonless/redis:latest
 ```
 
+### AppJail
+
+```bash
+appjail oci run -Pd \
+  -o overwrite=force \
+  -o container="args:--pull" \
+  -o virtualnet=":<random> default" \
+  -o nat \
+  -o expose="6379:6379 proto:tcp" \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=UTC \
+  -o fstab="/path/to/containers/redis /config <pseudofs>" \
+  ghcr.io/daemonless/redis:latest redis
+```
+**Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
+
 ### Ansible
 
 ```yaml
 - name: Deploy redis
   containers.podman.podman_container:
     name: redis
-    image: ghcr.io/daemonless/redis:latest
+    image: "ghcr.io/daemonless/redis:latest"
     state: started
     restart_policy: always
     env:
@@ -123,8 +150,6 @@ podman run -d --name redis \
     volumes:
       - "/path/to/containers/redis:/config"
 ```
-
-Access at: `http://localhost:6379`
 
 ## Parameters
 
@@ -150,7 +175,7 @@ Access at: `http://localhost:6379`
 
 **Architectures:** amd64
 **User:** `bsd` (UID/GID via PUID/PGID, defaults to 1000:1000)
-**Base:** FreeBSD 15.0
+**Base:** FreeBSD 15.1
 
 ---
 

@@ -20,7 +20,7 @@ Redis key-value store on FreeBSD.
 ## Version Tags
 | Tag | Description | Best For |
 | :--- | :--- | :--- |
-| `8.8` / `latest` / `pkg` / `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `8.8` / `8.8-pkg-latest` / `latest` / `pkg` / `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
 | `6.2` / `6.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
 | `7.2` / `7.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
 | `7.4` / `7.4-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |

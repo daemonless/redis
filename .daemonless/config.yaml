@@ -4,13 +4,13 @@ cit:
 
 build:
   variants:
-    - tag: "pkg-latest"
+    - tag: "8.8-pkg-latest"
       pkg_name: redis
       containerfile: Containerfile.pkg
       args:
         PACKAGES: "redis"
         BASE_VERSION: "15.1-latest"
-      aliases: ["latest", "pkg", "8.8"]
+      aliases: ["8.8", "latest", "pkg", "pkg-latest"]
       default: true
     - tag: "6.2-pkg-latest"
       pkg_name: redis62

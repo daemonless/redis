@@ -1,11 +1,11 @@
 {
-  "generated": "2026-06-26T22:33:41Z",
+  "generated": "2026-06-27T08:09:49Z",
   "image": "redis",
   "tags": {
     "6.2-pkg-latest": {
       "app_version": "6.2.22",
       "arch": "amd64",
-      "generated": "2026-06-26T22:31:22Z",
+      "generated": "2026-06-27T08:08:01Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -191,7 +191,7 @@
     "7.2-pkg-latest": {
       "app_version": "7.2.14",
       "arch": "amd64",
-      "generated": "2026-06-26T22:31:18Z",
+      "generated": "2026-06-27T08:08:25Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -377,7 +377,7 @@
     "7.4-pkg-latest": {
       "app_version": "7.4.9",
       "arch": "amd64",
-      "generated": "2026-06-26T22:32:28Z",
+      "generated": "2026-06-27T08:07:15Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -563,7 +563,7 @@
     "8.0-pkg-latest": {
       "app_version": "8.0.6",
       "arch": "amd64",
-      "generated": "2026-06-26T22:31:16Z",
+      "generated": "2026-06-27T08:08:01Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -749,7 +749,7 @@
     "8.2-pkg-latest": {
       "app_version": "8.2.7",
       "arch": "amd64",
-      "generated": "2026-06-26T22:31:13Z",
+      "generated": "2026-06-27T08:07:34Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -935,7 +935,7 @@
     "8.4-pkg-latest": {
       "app_version": "8.4.4",
       "arch": "amd64",
-      "generated": "2026-06-26T22:31:14Z",
+      "generated": "2026-06-27T08:08:17Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1121,7 +1121,7 @@
     "8.6-pkg-latest": {
       "app_version": "8.6.4",
       "arch": "amd64",
-      "generated": "2026-06-26T22:31:00Z",
+      "generated": "2026-06-27T08:08:03Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1304,10 +1304,10 @@
         "total": 39
       }
     },
-    "pkg-latest": {
+    "8.8-pkg-latest": {
       "app_version": "8.8.0",
       "arch": "amd64",
-      "generated": "2026-06-26T22:31:31Z",
+      "generated": "2026-06-27T08:08:26Z",
       "packages": {
         "dotnet": [],
         "freebsd": [

@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-18T12:29:45Z",
+  "generated": "2026-07-18T21:27:07Z",
   "image": "redis",
   "tags": {
     "6.2-pkg-latest": {
       "app_version": "6.2.22",
       "arch": "amd64",
-      "generated": "2026-07-18T12:28:35Z",
+      "generated": "2026-07-18T21:24:10Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -67,6 +67,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -177,7 +181,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 39,
+        "freebsd": 40,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -185,13 +189,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 39
+        "total": 40
       }
     },
     "7.2-pkg-latest": {
       "app_version": "7.2.14",
       "arch": "amd64",
-      "generated": "2026-07-18T12:25:23Z",
+      "generated": "2026-07-18T21:24:19Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -253,6 +257,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -363,7 +371,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 39,
+        "freebsd": 40,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -371,13 +379,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 39
+        "total": 40
       }
     },
     "7.4-pkg-latest": {
       "app_version": "7.4.9",
       "arch": "amd64",
-      "generated": "2026-07-18T12:26:10Z",
+      "generated": "2026-07-18T21:24:41Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -439,6 +447,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -549,7 +561,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 39,
+        "freebsd": 40,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -557,13 +569,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 39
+        "total": 40
       }
     },
     "8.0-pkg-latest": {
       "app_version": "8.0.6",
       "arch": "amd64",
-      "generated": "2026-07-18T12:25:44Z",
+      "generated": "2026-07-18T21:24:33Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -625,6 +637,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -735,7 +751,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 39,
+        "freebsd": 40,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -743,13 +759,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 39
+        "total": 40
       }
     },
     "8.2-pkg-latest": {
       "app_version": "8.2.7",
       "arch": "amd64",
-      "generated": "2026-07-18T12:25:06Z",
+      "generated": "2026-07-18T21:25:51Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -811,6 +827,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -921,7 +941,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 39,
+        "freebsd": 40,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -929,13 +949,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 39
+        "total": 40
       }
     },
     "8.4-pkg-latest": {
       "app_version": "8.4.4",
       "arch": "amd64",
-      "generated": "2026-07-18T12:25:27Z",
+      "generated": "2026-07-18T21:24:12Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -997,6 +1017,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -1107,7 +1131,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 39,
+        "freebsd": 40,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1115,13 +1139,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 39
+        "total": 40
       }
     },
     "8.6-pkg-latest": {
       "app_version": "8.6.4",
       "arch": "amd64",
-      "generated": "2026-07-18T12:25:17Z",
+      "generated": "2026-07-18T21:24:14Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1183,6 +1207,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -1293,7 +1321,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 39,
+        "freebsd": 40,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1301,13 +1329,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 39
+        "total": 40
       }
     },
     "8.8-pkg-latest": {
       "app_version": "8.8.0",
       "arch": "amd64",
-      "generated": "2026-07-18T12:25:42Z",
+      "generated": "2026-07-18T21:24:40Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1369,6 +1397,10 @@
           },
           {
             "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-locales",
             "version": "15.1"
           },
           {
@@ -1479,7 +1511,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 39,
+        "freebsd": 40,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1487,7 +1519,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 39
+        "total": 40
       }
     }
   }

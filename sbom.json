@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-07T11:06:48Z",
+  "generated": "2026-07-18T12:29:45Z",
   "image": "redis",
   "tags": {
     "6.2-pkg-latest": {
       "app_version": "6.2.22",
       "arch": "amd64",
-      "generated": "2026-07-07T10:59:56Z",
+      "generated": "2026-07-18T12:28:35Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -135,7 +135,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "execline",
@@ -191,7 +191,7 @@
     "7.2-pkg-latest": {
       "app_version": "7.2.14",
       "arch": "amd64",
-      "generated": "2026-07-07T11:04:49Z",
+      "generated": "2026-07-18T12:25:23Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -321,7 +321,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "execline",
@@ -377,7 +377,7 @@
     "7.4-pkg-latest": {
       "app_version": "7.4.9",
       "arch": "amd64",
-      "generated": "2026-07-07T11:04:07Z",
+      "generated": "2026-07-18T12:26:10Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -507,7 +507,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "execline",
@@ -563,7 +563,7 @@
     "8.0-pkg-latest": {
       "app_version": "8.0.6",
       "arch": "amd64",
-      "generated": "2026-07-07T11:03:54Z",
+      "generated": "2026-07-18T12:25:44Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -693,7 +693,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "execline",
@@ -749,7 +749,7 @@
     "8.2-pkg-latest": {
       "app_version": "8.2.7",
       "arch": "amd64",
-      "generated": "2026-07-07T11:04:59Z",
+      "generated": "2026-07-18T12:25:06Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -879,7 +879,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "execline",
@@ -935,7 +935,7 @@
     "8.4-pkg-latest": {
       "app_version": "8.4.4",
       "arch": "amd64",
-      "generated": "2026-07-07T11:05:16Z",
+      "generated": "2026-07-18T12:25:27Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1065,7 +1065,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "execline",
@@ -1121,7 +1121,7 @@
     "8.6-pkg-latest": {
       "app_version": "8.6.4",
       "arch": "amd64",
-      "generated": "2026-07-07T11:05:34Z",
+      "generated": "2026-07-18T12:25:17Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1251,7 +1251,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "execline",
@@ -1307,7 +1307,7 @@
     "8.8-pkg-latest": {
       "app_version": "8.8.0",
       "arch": "amd64",
-      "generated": "2026-07-07T10:59:55Z",
+      "generated": "2026-07-18T12:25:42Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1437,7 +1437,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "execline",

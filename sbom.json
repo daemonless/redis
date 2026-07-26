@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-18T21:27:07Z",
+  "generated": "2026-07-26T06:53:34Z",
   "image": "redis",
   "tags": {
     "6.2-pkg-latest": {
-      "app_version": "6.2.22",
+      "app_version": "6.2.23",
       "arch": "amd64",
-      "generated": "2026-07-18T21:24:10Z",
+      "generated": "2026-07-26T06:51:19Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -155,11 +155,11 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.0_1"
           },
           {
             "name": "redis62",
-            "version": "6.2.22"
+            "version": "6.2.23"
           },
           {
             "name": "s6",
@@ -193,9 +193,9 @@
       }
     },
     "7.2-pkg-latest": {
-      "app_version": "7.2.14",
+      "app_version": "7.2.15",
       "arch": "amd64",
-      "generated": "2026-07-18T21:24:19Z",
+      "generated": "2026-07-26T06:52:19Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -345,11 +345,11 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.0_1"
           },
           {
             "name": "redis72",
-            "version": "7.2.14"
+            "version": "7.2.15"
           },
           {
             "name": "s6",
@@ -383,9 +383,9 @@
       }
     },
     "7.4-pkg-latest": {
-      "app_version": "7.4.9",
+      "app_version": "7.4.10",
       "arch": "amd64",
-      "generated": "2026-07-18T21:24:41Z",
+      "generated": "2026-07-26T06:51:20Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -535,11 +535,11 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.0_1"
           },
           {
             "name": "redis74",
-            "version": "7.4.9"
+            "version": "7.4.10"
           },
           {
             "name": "s6",
@@ -575,7 +575,7 @@
     "8.0-pkg-latest": {
       "app_version": "8.0.6",
       "arch": "amd64",
-      "generated": "2026-07-18T21:24:33Z",
+      "generated": "2026-07-26T06:50:46Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -725,7 +725,7 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.0_1"
           },
           {
             "name": "redis80",
@@ -763,9 +763,9 @@
       }
     },
     "8.2-pkg-latest": {
-      "app_version": "8.2.7",
+      "app_version": "8.2.8",
       "arch": "amd64",
-      "generated": "2026-07-18T21:25:51Z",
+      "generated": "2026-07-26T06:51:29Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -915,11 +915,11 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.0_1"
           },
           {
             "name": "redis82",
-            "version": "8.2.7"
+            "version": "8.2.8"
           },
           {
             "name": "s6",
@@ -953,9 +953,9 @@
       }
     },
     "8.4-pkg-latest": {
-      "app_version": "8.4.4",
+      "app_version": "8.4.5",
       "arch": "amd64",
-      "generated": "2026-07-18T21:24:12Z",
+      "generated": "2026-07-26T06:51:27Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1105,11 +1105,11 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.0_1"
           },
           {
             "name": "redis84",
-            "version": "8.4.4"
+            "version": "8.4.5"
           },
           {
             "name": "s6",
@@ -1143,9 +1143,9 @@
       }
     },
     "8.6-pkg-latest": {
-      "app_version": "8.6.4",
+      "app_version": "8.6.5",
       "arch": "amd64",
-      "generated": "2026-07-18T21:24:14Z",
+      "generated": "2026-07-26T06:51:26Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1295,11 +1295,11 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.0_1"
           },
           {
             "name": "redis86",
-            "version": "8.6.4"
+            "version": "8.6.5"
           },
           {
             "name": "s6",
@@ -1333,9 +1333,9 @@
       }
     },
     "8.8-pkg-latest": {
-      "app_version": "8.8.0",
+      "app_version": "8.8.1",
       "arch": "amd64",
-      "generated": "2026-07-18T21:24:40Z",
+      "generated": "2026-07-26T06:51:33Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1485,11 +1485,11 @@
           },
           {
             "name": "pkg",
-            "version": "2.7.5"
+            "version": "2.8.0_1"
           },
           {
             "name": "redis",
-            "version": "8.8.0"
+            "version": "8.8.1"
           },
           {
             "name": "s6",

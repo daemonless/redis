@@ -3,6 +3,9 @@ cit:
   port: 6379
 
 build:
+  architectures:
+    - amd64
+    - aarch64
   variants:
     - tag: "8.8-pkg-latest"
       pkg_name: redis

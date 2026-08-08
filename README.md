@@ -77,7 +77,7 @@ services:
     name: redis
     options:
       - container: 'boot args:--pull'
-      - expose: '6379:6379 proto:tcp' \
+      - expose: '6379:6379 proto:tcp'
     oci:
       user: root
       environment:
@@ -173,7 +173,7 @@ appjail oci run -Pd \
 |------|----------|-------------|
 | `6379` | TCP | Redis port |
 
-**Architectures:** amd64
+**Architectures:** amd64, aarch64
 **User:** `bsd` (UID/GID via PUID/PGID, defaults to 1000:1000)
 **Base:** FreeBSD 15.1
 

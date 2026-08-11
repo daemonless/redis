@@ -20,14 +20,14 @@ Redis key-value store on FreeBSD.
 ## Version Tags
 | Tag | Description | Best For |
 | :--- | :--- | :--- |
-| `8.8` / `8.8-pkg-latest` / `latest` / `pkg` / `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
-| `6.2` / `6.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
-| `7.2` / `7.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
-| `7.4` / `7.4-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
-| `8.0` / `8.0-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
-| `8.2` / `8.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
-| `8.4` / `8.4-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
-| `8.6` / `8.6-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+| `8.8` / `8.8-pkg-latest` / `latest` / `pkg` / `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
+| `6.2` / `6.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
+| `7.2` / `7.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
+| `7.4` / `7.4-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
+| `8.0` / `8.0-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
+| `8.2` / `8.2-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
+| `8.4` / `8.4-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
+| `8.6` / `8.6-pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Staying current. |
 
 ## Prerequisites
 Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.

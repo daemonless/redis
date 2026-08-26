@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-23T07:38:25Z",
+  "generated": "2026-08-26T08:03:06Z",
   "image": "redis",
   "tags": {
     "6.2-pkg-latest-amd64": {
-      "app_version": "6.2.23",
+      "app_version": "6.2.24",
       "arch": "amd64",
-      "generated": "2026-08-23T07:36:52Z",
+      "generated": "2026-08-26T07:52:54Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -273,7 +273,7 @@
               "BSD3CLAUSE"
             ],
             "name": "redis62",
-            "version": "6.2.23"
+            "version": "6.2.24"
           },
           {
             "licenses": [
@@ -313,9 +313,9 @@
       }
     },
     "7.2-pkg-latest-amd64": {
-      "app_version": "7.2.15",
+      "app_version": "7.2.16",
       "arch": "amd64",
-      "generated": "2026-08-23T07:37:15Z",
+      "generated": "2026-08-26T07:52:38Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -583,7 +583,7 @@
               "BSD3CLAUSE"
             ],
             "name": "redis72",
-            "version": "7.2.15"
+            "version": "7.2.16"
           },
           {
             "licenses": [
@@ -623,9 +623,9 @@
       }
     },
     "7.4-pkg-latest-amd64": {
-      "app_version": "7.4.10",
+      "app_version": "7.4.11",
       "arch": "amd64",
-      "generated": "2026-08-23T07:37:30Z",
+      "generated": "2026-08-26T07:52:30Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -894,7 +894,7 @@
               "SSPLv1"
             ],
             "name": "redis74",
-            "version": "7.4.10"
+            "version": "7.4.11"
           },
           {
             "licenses": [
@@ -934,9 +934,9 @@
       }
     },
     "8.0-pkg-latest-amd64": {
-      "app_version": "8.0.6",
+      "app_version": "8.0.6_1",
       "arch": "amd64",
-      "generated": "2026-08-23T07:36:58Z",
+      "generated": "2026-08-26T07:52:26Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1206,7 +1206,7 @@
               "SSPLv1"
             ],
             "name": "redis80",
-            "version": "8.0.6"
+            "version": "8.0.6_1"
           },
           {
             "licenses": [
@@ -1246,9 +1246,9 @@
       }
     },
     "8.2-pkg-latest-amd64": {
-      "app_version": "8.2.8",
+      "app_version": "8.2.9",
       "arch": "amd64",
-      "generated": "2026-08-23T07:37:23Z",
+      "generated": "2026-08-26T07:52:55Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1518,7 +1518,7 @@
               "SSPLv1"
             ],
             "name": "redis82",
-            "version": "8.2.8"
+            "version": "8.2.9"
           },
           {
             "licenses": [
@@ -1558,9 +1558,9 @@
       }
     },
     "8.4-pkg-latest-amd64": {
-      "app_version": "8.4.5",
+      "app_version": "8.4.6",
       "arch": "amd64",
-      "generated": "2026-08-23T07:37:56Z",
+      "generated": "2026-08-26T07:53:01Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1830,7 +1830,7 @@
               "SSPLv1"
             ],
             "name": "redis84",
-            "version": "8.4.5"
+            "version": "8.4.6"
           },
           {
             "licenses": [
@@ -1870,9 +1870,9 @@
       }
     },
     "8.6-pkg-latest-amd64": {
-      "app_version": "8.6.5",
+      "app_version": "8.6.6",
       "arch": "amd64",
-      "generated": "2026-08-23T07:37:43Z",
+      "generated": "2026-08-26T07:52:38Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2142,7 +2142,7 @@
               "SSPLv1"
             ],
             "name": "redis86",
-            "version": "8.6.5"
+            "version": "8.6.6"
           },
           {
             "licenses": [
@@ -2182,9 +2182,9 @@
       }
     },
     "8.8-pkg-latest-amd64": {
-      "app_version": "8.10.0",
+      "app_version": "8.10.1",
       "arch": "amd64",
-      "generated": "2026-08-23T07:37:31Z",
+      "generated": "2026-08-26T07:52:45Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2454,7 +2454,7 @@
               "SSPLv1"
             ],
             "name": "redis",
-            "version": "8.10.0"
+            "version": "8.10.1"
           },
           {
             "licenses": [

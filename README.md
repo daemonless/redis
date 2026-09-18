@@ -7,6 +7,7 @@ Source: dbuild templates
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/daemonless/redis/build.yaml?style=flat-square&label=Build&color=green)](https://github.com/daemonless/redis/actions)
 [![Last Commit](https://img.shields.io/github/last-commit/daemonless/redis?style=flat-square&label=Last+Commit&color=blue)](https://github.com/daemonless/redis/commits)
+[![OCI Pulls](https://img.shields.io/docker/pulls/daemonless/redis?style=flat-square&label=OCI+Pulls&color=blue)](https://hub.docker.com/r/daemonless/redis)
 
 Redis key-value store on FreeBSD.
 
@@ -79,7 +80,7 @@ services:
   redis:
     name: redis
     options:
-      - container: 'boot args:--pull'
+      - container: 'args:--pull'
       - expose: '6379:6379 proto:tcp'
     oci:
       user: root
@@ -101,13 +102,18 @@ volumes:
 
 ARG tag=latest
 
+OPTION container=boot
 OPTION overwrite=force
 OPTION from=ghcr.io/daemonless/redis:${tag}
 ```
 
 Save the files above, then run `appjail-director up`.
 
-**Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
+
+> [!WARNING]
+> Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the jail's IPv4 address or hostname assigned by the virtual network.
+>
+> To avoid exposing ports, just remove the `expose` option in your `appjail-director.yml` or from your command-line arguments.
 
 ### Podman CLI
 
@@ -125,6 +131,7 @@ Save as `run.sh`, then run `sh run.sh`.
 
 ### AppJail
 
+
 ```bash
 appjail oci run -Pd \
   -o overwrite=force \
@@ -139,35 +146,42 @@ appjail oci run -Pd \
   ghcr.io/daemonless/redis:latest redis
 ```
 
-Save as `run.sh`, then run `sh run.sh`.
+Save the files above, then run `sh run.sh`.
 
-**Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
+
+> [!WARNING]
+> Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the jail's IPv4 address or hostname assigned by the virtual network.
+>
+> To avoid exposing ports, just remove the `expose` option in your `appjail-director.yml` or from your command-line arguments.
 
 ### Bastille
 
 > [!WARNING]
-> Bastille's OCI support is **experimental**. It requires `buildah`, shares the host network stack (`inherit`), and persists image-declared volumes under `--data-path`.
+> Bastille's OCI support is **experimental**. It requires `buildah` and shares the host network stack (`inherit`). Mount volumes with `--volume HOST JAIL`; without it, image-declared volumes are stored under `${bastille_volumesdir}/${jail}`.
 
 ```yaml
 services:
   redis:
+    name: redis
     image: "ghcr.io/daemonless/redis:latest"
-    container_name: redis
-    network_mode: host  # jail shares host networking
+    network:
+      - mode: host
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=UTC
+    volumes:
+      - "/path/to/containers/redis:/config"
 ```
 
-Save as `podman-compose.yml`, then run `bastille up`. Or via CLI:
+Save as `bastille-compose.yml`, then run `bastille up`. Or via CLI:
 
 ```bash
 bastille create -O \
   --env PUID=1000 \
   --env PGID=1000 \
   --env TZ=UTC \
-  --data-path /path/to/containers/redis \
+  --volume /path/to/containers/redis /config \
   redis ghcr.io/daemonless/redis:latest inherit
 ```
 

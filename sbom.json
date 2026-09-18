@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-08T12:37:45Z",
+  "generated": "2026-09-18T22:14:15Z",
   "image": "redis",
   "tags": {
     "6.2-pkg-latest-amd64": {
       "app_version": "6.2.24",
       "arch": "amd64",
-      "generated": "2026-09-08T12:34:51Z",
+      "generated": "2026-09-18T22:12:53Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -49,6 +49,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -174,6 +181,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -238,7 +252,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -301,7 +315,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 40,
+        "freebsd": 42,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -309,13 +323,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 40
+        "total": 42
       }
     },
     "7.2-pkg-latest-amd64": {
       "app_version": "7.2.16",
       "arch": "amd64",
-      "generated": "2026-09-08T12:37:08Z",
+      "generated": "2026-09-18T22:12:30Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -359,6 +373,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -484,6 +505,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -548,7 +576,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -611,7 +639,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 40,
+        "freebsd": 42,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -619,13 +647,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 40
+        "total": 42
       }
     },
     "7.4-pkg-latest-amd64": {
       "app_version": "7.4.11",
       "arch": "amd64",
-      "generated": "2026-09-08T12:36:32Z",
+      "generated": "2026-09-18T22:12:56Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -669,6 +697,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -794,6 +829,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -858,7 +900,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -922,7 +964,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 40,
+        "freebsd": 42,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -930,13 +972,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 40
+        "total": 42
       }
     },
     "8.0-pkg-latest-amd64": {
       "app_version": "8.0.6_1",
       "arch": "amd64",
-      "generated": "2026-09-08T12:34:18Z",
+      "generated": "2026-09-18T22:13:11Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -980,6 +1022,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -1105,6 +1154,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -1169,7 +1225,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -1234,7 +1290,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 40,
+        "freebsd": 42,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1242,13 +1298,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 40
+        "total": 42
       }
     },
     "8.2-pkg-latest-amd64": {
       "app_version": "8.2.9",
       "arch": "amd64",
-      "generated": "2026-09-08T12:36:02Z",
+      "generated": "2026-09-18T22:12:46Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1292,6 +1348,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -1417,6 +1480,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -1481,7 +1551,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -1546,7 +1616,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 40,
+        "freebsd": 42,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1554,13 +1624,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 40
+        "total": 42
       }
     },
     "8.4-pkg-latest-amd64": {
       "app_version": "8.4.6",
       "arch": "amd64",
-      "generated": "2026-09-08T12:36:05Z",
+      "generated": "2026-09-18T22:12:41Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1604,6 +1674,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -1729,6 +1806,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -1793,7 +1877,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -1858,7 +1942,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 40,
+        "freebsd": 42,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1866,13 +1950,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 40
+        "total": 42
       }
     },
     "8.6-pkg-latest-amd64": {
       "app_version": "8.6.6",
       "arch": "amd64",
-      "generated": "2026-09-08T12:34:33Z",
+      "generated": "2026-09-18T22:12:50Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1916,6 +2000,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -2041,6 +2132,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -2105,7 +2203,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -2170,7 +2268,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 40,
+        "freebsd": 42,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -2178,13 +2276,13 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 40
+        "total": 42
       }
     },
     "8.8-pkg-latest-amd64": {
       "app_version": "8.10.1",
       "arch": "amd64",
-      "generated": "2026-09-08T12:33:18Z",
+      "generated": "2026-09-18T22:13:24Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2228,6 +2326,13 @@
               "CDDL-1.0"
             ],
             "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
             "version": "15.1"
           },
           {
@@ -2353,6 +2458,13 @@
             "licenses": [
               "BSD2CLAUSE"
             ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
             "name": "FreeBSD-runtime",
             "version": "15.1p3"
           },
@@ -2417,7 +2529,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.127"
+            "version": "3.129"
           },
           {
             "licenses": [
@@ -2482,7 +2594,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 40,
+        "freebsd": 42,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -2490,7 +2602,7 @@
         "python": 0,
         "ruby": 0,
         "rust": 0,
-        "total": 40
+        "total": 42
       }
     }
   }

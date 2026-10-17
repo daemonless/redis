@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-09T16:32:10Z",
+  "generated": "2026-10-17T10:58:14Z",
   "image": "redis",
   "tags": {
     "6.2-pkg-latest-aarch64": {
       "app_version": "6.2.24",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:26:05Z",
+      "generated": "2026-10-17T10:53:21Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -329,7 +329,7 @@
     "7.2-pkg-latest-aarch64": {
       "app_version": "7.2.16",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:26:10Z",
+      "generated": "2026-10-17T10:53:26Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -653,7 +653,7 @@
     "7.4-pkg-latest-aarch64": {
       "app_version": "7.4.11",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:26:15Z",
+      "generated": "2026-10-17T10:53:30Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -978,7 +978,7 @@
     "8.0-pkg-latest-aarch64": {
       "app_version": "8.0.6_1",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:26:20Z",
+      "generated": "2026-10-17T10:53:34Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1304,7 +1304,7 @@
     "8.2-pkg-latest-aarch64": {
       "app_version": "8.2.10",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:26:25Z",
+      "generated": "2026-10-17T10:53:38Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1630,7 +1630,7 @@
     "8.4-pkg-latest-aarch64": {
       "app_version": "8.4.7",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:26:30Z",
+      "generated": "2026-10-17T10:53:41Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1956,7 +1956,7 @@
     "8.6-pkg-latest-aarch64": {
       "app_version": "8.6.7",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:26:35Z",
+      "generated": "2026-10-17T10:53:46Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2282,7 +2282,7 @@
     "8.8-pkg-latest-aarch64": {
       "app_version": "8.10.2",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:26:00Z",
+      "generated": "2026-10-17T10:53:17Z",
       "packages": {
         "dotnet": [],
         "freebsd": [

@@ -81,7 +81,6 @@ services:
     name: redis
     options:
       - container: 'args:--pull'
-      - expose: '6379:6379 proto:tcp'
     oci:
       user: root
       environment:

@@ -1,5 +1,5 @@
 ARG BASE_VERSION=15.1-latest
-FROM ghcr.io/daemonless/base:${BASE_VERSION}
+FROM ghcr.io/daemonless/base-exec:${BASE_VERSION}
 
 ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="redis"
@@ -39,7 +39,9 @@ RUN mkdir -p /config/data /run/redis && \
 
 # Copy service files
 COPY root/ /
-RUN chmod +x /etc/services.d/*/run /etc/cont-init.d/* 2>/dev/null || true
+RUN chmod +x /daemonless/libexec/redis /daemonless/init.d/*
+
+CMD ["/daemonless/libexec/redis"]
 
 ENV REDIS_DATA=/config/data
 

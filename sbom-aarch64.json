@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-30T16:40:38Z",
+  "generated": "2026-11-03T20:59:43Z",
   "image": "redis",
   "tags": {
     "6.2-pkg-latest-aarch64": {
       "app_version": "6.2.24",
       "arch": "aarch64",
-      "generated": "2026-10-30T16:34:48Z",
+      "generated": "2026-11-03T20:51:58Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -306,9 +306,9 @@
       }
     },
     "7.2-pkg-latest-aarch64": {
-      "app_version": "7.2.16",
+      "app_version": "7.2.17",
       "arch": "aarch64",
-      "generated": "2026-10-30T16:34:53Z",
+      "generated": "2026-11-03T20:52:03Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -583,7 +583,7 @@
               "BSD3CLAUSE"
             ],
             "name": "redis72",
-            "version": "7.2.16"
+            "version": "7.2.17"
           }
         ],
         "go": [],
@@ -609,9 +609,9 @@
       }
     },
     "7.4-pkg-latest-aarch64": {
-      "app_version": "7.4.11",
+      "app_version": "7.4.12",
       "arch": "aarch64",
-      "generated": "2026-10-30T16:34:58Z",
+      "generated": "2026-11-03T20:52:08Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -887,7 +887,7 @@
               "SSPLv1"
             ],
             "name": "redis74",
-            "version": "7.4.11"
+            "version": "7.4.12"
           }
         ],
         "go": [],
@@ -915,7 +915,7 @@
     "8.0-pkg-latest-aarch64": {
       "app_version": "8.0.6_1",
       "arch": "aarch64",
-      "generated": "2026-10-30T16:35:03Z",
+      "generated": "2026-11-03T20:52:13Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1218,9 +1218,9 @@
       }
     },
     "8.2-pkg-latest-aarch64": {
-      "app_version": "8.2.10",
+      "app_version": "8.2.11",
       "arch": "aarch64",
-      "generated": "2026-10-30T16:35:08Z",
+      "generated": "2026-11-03T20:52:18Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1497,7 +1497,7 @@
               "SSPLv1"
             ],
             "name": "redis82",
-            "version": "8.2.10"
+            "version": "8.2.11"
           }
         ],
         "go": [],
@@ -1523,9 +1523,9 @@
       }
     },
     "8.4-pkg-latest-aarch64": {
-      "app_version": "8.4.7",
+      "app_version": "8.4.8",
       "arch": "aarch64",
-      "generated": "2026-10-30T16:35:13Z",
+      "generated": "2026-11-03T20:52:23Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1802,7 +1802,7 @@
               "SSPLv1"
             ],
             "name": "redis84",
-            "version": "8.4.7"
+            "version": "8.4.8"
           }
         ],
         "go": [],
@@ -1828,9 +1828,9 @@
       }
     },
     "8.6-pkg-latest-aarch64": {
-      "app_version": "8.6.7",
+      "app_version": "8.6.8",
       "arch": "aarch64",
-      "generated": "2026-10-30T16:35:18Z",
+      "generated": "2026-11-03T20:52:28Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2107,7 +2107,7 @@
               "SSPLv1"
             ],
             "name": "redis86",
-            "version": "8.6.7"
+            "version": "8.6.8"
           }
         ],
         "go": [],
@@ -2133,9 +2133,9 @@
       }
     },
     "8.8-pkg-latest-aarch64": {
-      "app_version": "8.10.2",
+      "app_version": "8.10.3",
       "arch": "aarch64",
-      "generated": "2026-10-30T16:34:43Z",
+      "generated": "2026-11-03T20:51:53Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2412,7 +2412,7 @@
               "SSPLv1"
             ],
             "name": "redis",
-            "version": "8.10.2"
+            "version": "8.10.3"
           }
         ],
         "go": [],

@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-04T17:52:06Z",
+  "generated": "2026-11-13T23:44:32Z",
   "image": "redis",
   "tags": {
     "6.2-pkg-latest-amd64": {
       "app_version": "6.2.24",
       "arch": "amd64",
-      "generated": "2026-11-04T09:45:10Z",
+      "generated": "2026-11-13T23:40:58Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -273,7 +273,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -308,7 +308,7 @@
     "7.2-pkg-latest-amd64": {
       "app_version": "7.2.17",
       "arch": "amd64",
-      "generated": "2026-11-04T09:45:28Z",
+      "generated": "2026-11-13T23:39:47Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -576,7 +576,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -611,7 +611,7 @@
     "7.4-pkg-latest-amd64": {
       "app_version": "7.4.12",
       "arch": "amd64",
-      "generated": "2026-11-04T09:45:12Z",
+      "generated": "2026-11-13T23:43:57Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -879,7 +879,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -915,7 +915,7 @@
     "8.0-pkg-latest-amd64": {
       "app_version": "8.0.6_1",
       "arch": "amd64",
-      "generated": "2026-11-04T09:44:43Z",
+      "generated": "2026-11-13T23:40:18Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1183,7 +1183,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -1220,7 +1220,7 @@
     "8.2-pkg-latest-amd64": {
       "app_version": "8.2.11",
       "arch": "amd64",
-      "generated": "2026-11-04T09:45:26Z",
+      "generated": "2026-11-13T23:41:25Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1488,7 +1488,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -1525,7 +1525,7 @@
     "8.4-pkg-latest-amd64": {
       "app_version": "8.4.8",
       "arch": "amd64",
-      "generated": "2026-11-04T09:45:07Z",
+      "generated": "2026-11-13T23:39:50Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1793,7 +1793,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -1830,7 +1830,7 @@
     "8.6-pkg-latest-amd64": {
       "app_version": "8.6.8",
       "arch": "amd64",
-      "generated": "2026-11-04T09:46:34Z",
+      "generated": "2026-11-13T23:41:07Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2098,7 +2098,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -2135,7 +2135,7 @@
     "8.8-pkg-latest-amd64": {
       "app_version": "8.10.3",
       "arch": "amd64",
-      "generated": "2026-11-04T09:45:28Z",
+      "generated": "2026-11-13T23:40:27Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -2403,7 +2403,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
